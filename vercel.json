@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/ag-bouw(.*)", "destination": "/builders/ag-bouw$1" },
-    { "source": "/", "destination": "/builders/ag-bouw/index.html" }
+    { "source": "/", "destination": "/builders/ag-bouw/index.html" },
+    { "source": "/:client(.*)", "destination": "/builders/:client" }
   ]
 }
