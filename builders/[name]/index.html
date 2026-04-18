@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>[NAME] – [SERVICES] in [CITY] | Vakman ZZP</title>
+  <meta name="description" content="[NAME] is een betrouwbare vakman in [CITY] gespecialiseerd in [SERVICES]. Neem contact op voor een vrijblijvende offerte. | [NAME] is a reliable tradesman in [CITY] specialised in [SERVICES]. Contact us for a free quote." />
+  <meta name="keywords" content="[SERVICES], [CITY], ZZP vakman, aannemer [CITY], offerte, renovatie, verbouwing" />
+  <meta name="author" content="[NAME]" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="[NAME] – [SERVICES] in [CITY]" />
+  <meta property="og:description" content="Betrouwbare vakman in [CITY]. Vraag vandaag nog een offerte aan! | Reliable tradesman in [CITY]. Request a quote today!" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    /* ── Reset & Base ─────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #1a1a1a;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+
+    /* ── Utility ──────────────────────────────────────── */
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: #e85d04;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+      transition: background 0.2s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn:hover { background: #c94e00; }
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #e85d04;
+      margin-bottom: 10px;
+    }
+    .lang-en {
+      color: #555;
+      font-style: italic;
+      font-size: 0.93em;
+    }
+
+    /* ── Navigation ───────────────────────────────────── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #fff;
+      border-bottom: 1px solid #f0f0f0;
+      padding: 14px 0;
+    }
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .nav-logo {
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: #1a1a1a;
+    }
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      flex-wrap: wrap;
+    }
+    .nav-links a {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #444;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #e85d04; }
+
+    /* ── Hero ─────────────────────────────────────────── */
+    #hero {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+      color: #fff;
+      padding: 96px 0 80px;
+      text-align: center;
+    }
+    #hero .badge {
+      display: inline-block;
+      background: rgba(232,93,4,0.15);
+      color: #f4a261;
+      border: 1px solid rgba(232,93,4,0.4);
+      border-radius: 20px;
+      padding: 5px 16px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      margin-bottom: 28px;
+    }
+    #hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 8px;
+    }
+    #hero h1 span { color: #e85d04; }
+    #hero .subtitle {
+      font-size: 1.15rem;
+      color: #c0c8d8;
+      margin-bottom: 6px;
+    }
+    #hero .subtitle-en {
+      font-size: 0.95rem;
+      color: #8090a8;
+      margin-bottom: 36px;
+    }
+    #hero .cta-group {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    #hero .btn-outline {
+      display: inline-block;
+      padding: 14px 32px;
+      border: 2px solid rgba(255,255,255,0.35);
+      color: #fff;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    #hero .btn-outline:hover {
+      border-color: #e85d04;
+      background: rgba(232,93,4,0.12);
+    }
+
+    /* ── Trust bar ────────────────────────────────────── */
+    #trust {
+      background: #f8f8f8;
+      border-bottom: 1px solid #eee;
+      padding: 18px 0;
+    }
+    #trust .container {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #444;
+    }
+    .trust-item .icon { font-size: 1.1rem; }
+
+    /* ── Sections shared ──────────────────────────────── */
+    section { padding: 72px 0; }
+    section h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      margin-bottom: 6px;
+      line-height: 1.25;
+    }
+    section h2 .en {
+      display: block;
+      font-size: 0.7em;
+      font-weight: 500;
+      color: #888;
+      font-style: italic;
+    }
+    .section-intro {
+      color: #555;
+      margin-bottom: 36px;
+      max-width: 600px;
+    }
+
+    /* ── Services ─────────────────────────────────────── */
+    #diensten { background: #fff; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .service-card {
+      background: #f9f9f9;
+      border: 1px solid #ebebeb;
+      border-radius: 10px;
+      padding: 28px 22px;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .service-card:hover {
+      box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+      transform: translateY(-3px);
+    }
+    .service-card .icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .service-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .service-card p {
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    /* ── About ────────────────────────────────────────── */
+    #over { background: #f4f6f9; }
+    .about-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    @media (max-width: 600px) { .about-inner { grid-template-columns: 1fr; } }
+    .about-text p { color: #444; margin-bottom: 14px; }
+    .about-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .stat-card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 24px 18px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+    .stat-card .num {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #e85d04;
+    }
+    .stat-card .label {
+      font-size: 0.78rem;
+      color: #666;
+      margin-top: 4px;
+    }
+    .stat-card .label-en {
+      font-size: 0.7rem;
+      color: #999;
+      font-style: italic;
+    }
+
+    /* ── Contact ──────────────────────────────────────── */
+    #contact { background: #fff; }
+    .contact-box {
+      background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+      border-radius: 16px;
+      padding: 52px 40px;
+      text-align: center;
+      color: #fff;
+    }
+    @media (max-width: 540px) { .contact-box { padding: 36px 20px; } }
+    .contact-box h2 {
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .contact-box .sub {
+      color: #a0b0c8;
+      margin-bottom: 4px;
+      font-size: 1rem;
+    }
+    .contact-box .sub-en {
+      color: #7080a0;
+      font-size: 0.88rem;
+      font-style: italic;
+      margin-bottom: 32px;
+    }
+    .contact-details {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    .contact-item .ci-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7080a0;
+    }
+    .contact-item a {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+      transition: color 0.2s;
+    }
+    .contact-item a:hover { color: #f4a261; }
+    .contact-box .btn {
+      font-size: 1.05rem;
+      padding: 15px 38px;
+    }
+
+    /* ── Footer ───────────────────────────────────────── */
+    footer {
+      background: #111;
+      color: #777;
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 0.82rem;
+    }
+    footer span { color: #e85d04; }
+
+    /* ── Responsive nav ───────────────────────────────── */
+    @media (max-width: 500px) {
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════ -->
+  <nav>
+    <div class="container">
+      <span class="nav-logo">[NAME]</span>
+      <ul class="nav-links">
+        <li><a href="#diensten">Diensten / Services</a></li>
+        <li><a href="#over">Over mij / About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="container">
+      <div class="badge">📍 [CITY] &amp; omgeving / surrounding area</div>
+      <h1>[NAME]<br><span>[SERVICES]</span></h1>
+      <p class="subtitle">Vakwerk waar u op kunt rekenen – snel, netjes en eerlijk geprijsd.</p>
+      <p class="subtitle-en">Quality craftsmanship you can count on – fast, neat and fairly priced.</p>
+      <div class="cta-group">
+        <a href="#contact" class="btn">Vraag een offerte aan / Get a quote</a>
+        <a href="tel:[PHONE]" class="btn-outline">📞 [PHONE]</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       TRUST BAR
+  ══════════════════════════════════════════ -->
+  <div id="trust">
+    <div class="container">
+      <div class="trust-item"><span class="icon">✅</span> KvK geregistreerd / Registered</div>
+      <div class="trust-item"><span class="icon">⭐</span> Tevreden klanten / Happy clients</div>
+      <div class="trust-item"><span class="icon">📅</span> Snel beschikbaar / Quick availability</div>
+      <div class="trust-item"><span class="icon">💬</span> Gratis advies / Free advice</div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       DIENSTEN / SERVICES
+  ══════════════════════════════════════════ -->
+  <section id="diensten">
+    <div class="container">
+      <span class="section-label">Wat ik doe / What I do</span>
+      <h2>Mijn diensten <span class="en">My services</span></h2>
+      <p class="section-intro">
+        Ik bied vakkundige diensten aan in en rond [CITY]. Elk project wordt met zorg en precisie uitgevoerd.<br>
+        <span class="lang-en">I offer professional services in and around [CITY]. Every project is carried out with care and precision.</span>
+      </p>
+
+      <!-- ✏️ Replace / duplicate these cards to match [SERVICES] -->
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="icon">🔨</div>
+          <h3>[Dienst 1 / Service 1]</h3>
+          <p>Korte omschrijving van de dienst.<br><em>Short service description.</em></p>
+        </div>
+        <div class="service-card">
+          <div class="icon">🪣</div>
+          <h3>[Dienst 2 / Service 2]</h3>
+          <p>Korte omschrijving van de dienst.<br><em>Short service description.</em></p>
+        </div>
+        <div class="service-card">
+          <div class="icon">🏠</div>
+          <h3>[Dienst 3 / Service 3]</h3>
+          <p>Korte omschrijving van de dienst.<br><em>Short service description.</em></p>
+        </div>
+        <div class="service-card">
+          <div class="icon">🔧</div>
+          <h3>[Dienst 4 / Service 4]</h3>
+          <p>Korte omschrijving van de dienst.<br><em>Short service description.</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       OVER MIJ / ABOUT
+  ══════════════════════════════════════════ -->
+  <section id="over">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-text">
+          <span class="section-label">Over mij / About me</span>
+          <h2>Waarom kiezen voor [NAME]? <span class="en">Why choose [NAME]?</span></h2>
+          <p>
+            Ik ben [NAME], een zelfstandig vakman gevestigd in [CITY]. Met jarenlange ervaring in [SERVICES]
+            lever ik werk af waar mijn klanten trots op zijn. Geen gedoe, gewoon degelijk vakwerk.
+          </p>
+          <p class="lang-en">
+            I am [NAME], an independent tradesman based in [CITY]. With years of experience in [SERVICES]
+            I deliver work my clients are proud of. No hassle, just solid craftsmanship.
+          </p>
+          <p>
+            ✔ Persoonlijk contact &amp; eerlijke prijs<br>
+            ✔ Opgeruimd achterlaten na elk project<br>
+            ✔ Altijd op tijd<br>
+            <em style="color:#777; font-size:0.88em;">✔ Personal contact &amp; fair price · Clean job site · Always on time</em>
+          </p>
+          <br>
+          <a href="#contact" class="btn">Neem contact op / Contact me</a>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="num">10+</div>
+            <div class="label">Jaar ervaring</div>
+            <div class="label-en">Years experience</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">200+</div>
+            <div class="label">Projecten afgerond</div>
+            <div class="label-en">Projects completed</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">100%</div>
+            <div class="label">Tevredenheid</div>
+            <div class="label-en">Satisfaction</div>
+          </div>
+          <div class="stat-card">
+            <div class="num">ZZP</div>
+            <div class="label">KvK geregistreerd</div>
+            <div class="label-en">Chamber of Commerce</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT
+  ══════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-box">
+        <h2>Klaar om te starten? / Ready to start?</h2>
+        <p class="sub">Neem vandaag nog contact op voor een vrijblijvende offerte in [CITY].</p>
+        <p class="sub-en">Contact us today for a no-obligation quote in [CITY].</p>
+
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="ci-label">📞 Telefoon / Phone</span>
+            <a href="tel:[PHONE]">[PHONE]</a>
+          </div>
+          <div class="contact-item">
+            <span class="ci-label">✉️ E-mail</span>
+            <a href="mailto:[EMAIL]">[EMAIL]</a>
+          </div>
+          <div class="contact-item">
+            <span class="ci-label">📍 Locatie / Location</span>
+            <span style="color:#c0cfe0; font-weight:700;">[CITY] &amp; omgeving</span>
+          </div>
+        </div>
+
+        <a href="mailto:[EMAIL]" class="btn">📧 Stuur een bericht / Send a message</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer>
+    <p>© 2026 <span>[NAME]</span> · [CITY] · <a href="tel:[PHONE]" style="color:#e85d04;">[PHONE]</a> · <a href="mailto:[EMAIL]" style="color:#e85d04;">[EMAIL]</a></p>
+    <p style="margin-top:6px; font-size:0.78rem;">Vakman ZZP Nederland · Alle rechten voorbehouden / All rights reserved</p>
+  </footer>
+
+</body>
+</html>

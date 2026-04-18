@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AG Bouw – Renovatie &amp; Tegelwerk Rotterdam | Arunas Gimebreikas</title>
+  <meta name="description" content="AG Bouw – Betrouwbare renovatie en tegelwerk in Rotterdam door Arunas Gimebreikas. Badkamer renovatie, tegelzetten, schilderwerk en kleine verbouwingen. Bel 0612345678. | Reliable renovation and tiling in Rotterdam. Call for a free quote." />
+  <meta name="keywords" content="renovatie Rotterdam, tegelzetter Rotterdam, badkamer renovatie Rotterdam, ZZP aannemer Rotterdam, schilderwerk Rotterdam, AG Bouw, Arunas Gimebreikas" />
+  <meta name="author" content="Arunas Gimebreikas – AG Bouw" />
+  <meta property="og:title" content="AG Bouw – Renovatie &amp; Tegelwerk Rotterdam" />
+  <meta property="og:description" content="Vakkundige renovatie en tegelwerk in Rotterdam. Vraag vandaag een vrijblijvende offerte aan!" />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+  <style>
+    /* ══ TOKENS ══════════════════════════════════════ */
+    :root {
+      --green:        #1a4a3a;
+      --green-mid:    #245c49;
+      --green-light:  #2e7a5e;
+      --green-pale:   #e8f2ee;
+      --green-glow:   rgba(26,74,58,.1);
+      --cream:        #faf7f2;
+      --cream-dark:   #f0ebe1;
+      --sand:         #e8e0d0;
+      --rust:         #c0392b;
+      --rust-dark:    #a02e23;
+      --ink:          #1a1a1a;
+      --slate:        #3d4452;
+      --muted:        #6b7280;
+      --border:       #ddd8ce;
+      --white:        #ffffff;
+      --r-sm: 6px; --r-md: 10px; --r-lg: 16px; --r-xl: 24px;
+      --sh-sm: 0 2px 8px rgba(0,0,0,.06);
+      --sh-md: 0 6px 24px rgba(0,0,0,.1);
+      --sh-lg: 0 16px 48px rgba(0,0,0,.14);
+      --sp: 96px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'DM Sans', 'Segoe UI', Arial, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ══ LAYOUT ══════════════════════════════════════ */
+    .container { max-width: 960px; margin: 0 auto; padding: 0 28px; }
+
+    /* ══ BUTTONS ══════════════════════════════════════ */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: inherit; font-weight: 700; letter-spacing: .01em;
+      border-radius: var(--r-sm); border: 2px solid transparent;
+      cursor: pointer; white-space: nowrap;
+      transition: background .18s, border-color .18s, transform .14s, box-shadow .18s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-md  { padding: 14px 32px; font-size: .95rem; }
+    .btn-lg  { padding: 18px 44px; font-size: 1.02rem; }
+    .btn-xl  { padding: 21px 52px; font-size: 1.08rem; }
+
+    .btn-rust {
+      background: var(--rust); color: #fff; border-color: var(--rust);
+      box-shadow: 0 4px 16px rgba(192,57,43,.32);
+    }
+    .btn-rust:hover { background: var(--rust-dark); border-color: var(--rust-dark); box-shadow: 0 6px 22px rgba(160,46,35,.4); }
+
+    .btn-green {
+      background: var(--green); color: #fff; border-color: var(--green);
+      box-shadow: 0 4px 16px rgba(26,74,58,.3);
+    }
+    .btn-green:hover { background: var(--green-mid); border-color: var(--green-mid); }
+
+    .btn-outline-cream {
+      background: transparent; color: #fff; border-color: rgba(255,255,255,.5);
+    }
+    .btn-outline-cream:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+
+    .btn-outline-green {
+      background: transparent; color: var(--green); border-color: var(--green);
+    }
+    .btn-outline-green:hover { background: var(--green-glow); }
+
+    /* ══ LANGUAGE BLOCKS ══════════════════════════════ */
+    .lang-block { border-radius: var(--r-md); margin-bottom: 14px; overflow: hidden; }
+    .lang-block-nl {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+    }
+    .lang-block-en {
+      background: var(--cream-dark);
+      border: 1.5px solid var(--sand);
+    }
+    .lang-header {
+      display: flex; align-items: center; gap: 8px;
+      padding: 10px 22px;
+      font-size: .7rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+    .lang-header-nl { background: var(--green); color: rgba(255,255,255,.85); }
+    .lang-header-en { background: var(--cream-dark); color: var(--muted); border-bottom: 1px solid var(--sand); }
+    .lang-body { padding: 18px 22px 20px; }
+    .lang-body p { font-size: .97rem; color: var(--slate); line-height: 1.7; }
+
+    /* ══ SECTION TAGS ══════════════════════════════════ */
+    .section-tag {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: .72rem; font-weight: 700; letter-spacing: .14em;
+      text-transform: uppercase; color: var(--green-light);
+      margin-bottom: 10px;
+    }
+    .section-tag::before {
+      content: ''; display: inline-block;
+      width: 20px; height: 2px; background: var(--green-light);
+      border-radius: 2px;
+    }
+    .section-heading {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 400; line-height: 1.15;
+      color: var(--ink); margin-bottom: 10px;
+    }
+    .section-heading .accent { color: var(--green-light); }
+    .section-sub {
+      font-size: 1.05rem; color: var(--muted);
+      max-width: 580px; margin-bottom: 52px;
+    }
+
+    /* ══ NAV ═══════════════════════════════════════════ */
+    nav {
+      position: sticky; top: 0; z-index: 300;
+      background: var(--green);
+    }
+    nav .inner {
+      max-width: 960px; margin: 0 auto; padding: 0 28px;
+      height: 64px; display: flex; align-items: center;
+      justify-content: space-between; gap: 16px;
+    }
+    .nav-brand { display: flex; align-items: center; gap: 13px; }
+    .nav-monogram {
+      width: 40px; height: 40px;
+      border: 2px solid rgba(255,255,255,.25);
+      border-radius: var(--r-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.15rem; color: #fff; letter-spacing: .02em;
+      flex-shrink: 0;
+    }
+    .nav-name { font-size: 1.05rem; font-weight: 700; color: #fff; }
+    .nav-sub { font-size: .7rem; color: rgba(255,255,255,.5); margin-top: 1px; }
+    .nav-links { display: flex; gap: 30px; }
+    .nav-links a {
+      font-size: .88rem; font-weight: 600;
+      color: rgba(255,255,255,.65); transition: color .2s;
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-cta {
+      display: inline-flex; align-items: center; gap: 7px;
+      padding: 9px 20px; background: var(--rust); color: #fff;
+      font-weight: 700; font-size: .88rem; border-radius: var(--r-sm);
+      transition: background .2s, transform .15s;
+    }
+    .nav-cta:hover { background: var(--rust-dark); transform: translateY(-1px); }
+    @media (max-width: 680px) { .nav-links { display: none; } }
+
+    /* ══ HERO ══════════════════════════════════════════ */
+    #hero {
+      background: var(--green);
+      padding: 0;
+      position: relative;
+      overflow: hidden;
+    }
+    /* Diagonal split */
+    #hero::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0; right: 0;
+      height: 80px;
+      background: var(--cream);
+      clip-path: polygon(0 100%, 100% 0, 100% 100%);
+      z-index: 1;
+    }
+    /* Subtle texture */
+    #hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: repeating-linear-gradient(
+        -45deg,
+        rgba(255,255,255,.012) 0px,
+        rgba(255,255,255,.012) 1px,
+        transparent 1px,
+        transparent 12px
+      );
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative; z-index: 2;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 48px; align-items: center;
+      padding: 80px 28px 110px;
+      max-width: 960px; margin: 0 auto;
+    }
+    @media (max-width: 700px) { .hero-inner { grid-template-columns: 1fr; padding: 60px 24px 90px; } }
+
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+      color: rgba(255,255,255,.8); border-radius: 4px;
+      padding: 5px 14px; font-size: .78rem; font-weight: 600;
+      letter-spacing: .05em; margin-bottom: 28px;
+    }
+    .hero-h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      font-weight: 400; line-height: 1.1; color: #fff;
+      margin-bottom: 8px;
+    }
+    .hero-h1 em { color: rgba(255,255,255,.55); font-style: italic; }
+    .hero-h1-en {
+      font-size: clamp(1rem, 2vw, 1.3rem);
+      color: rgba(255,255,255,.38); font-style: italic;
+      margin-bottom: 32px; font-weight: 400;
+    }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .hero-right {
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    .hero-lang-card {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--r-lg);
+      padding: 24px 26px 22px;
+    }
+    .hlc-flag {
+      font-size: .7rem; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: rgba(255,255,255,.4);
+      margin-bottom: 10px; display: block;
+    }
+    .hero-lang-card p { font-size: .92rem; color: rgba(255,255,255,.6); line-height: 1.55; margin-bottom: 16px; }
+    .hero-lang-card .btns { display: flex; gap: 10px; flex-wrap: wrap; }
+    .hero-lang-card .btns .btn { padding: 12px 22px; font-size: .88rem; }
+
+    /* ══ TRUST STRIP ═══════════════════════════════════ */
+    #trust { background: var(--cream); padding: 0 0 56px; }
+    .trust-pills {
+      display: flex; flex-wrap: wrap; gap: 12px;
+      justify-content: center;
+      max-width: 960px; margin: 0 auto; padding: 40px 28px 0;
+    }
+    .trust-pill {
+      display: flex; align-items: center; gap: 10px;
+      background: var(--white); border: 1.5px solid var(--border);
+      border-radius: 40px; padding: 14px 24px;
+      box-shadow: var(--sh-sm); transition: box-shadow .2s, transform .2s;
+    }
+    .trust-pill:hover { box-shadow: var(--sh-md); transform: translateY(-2px); }
+    .trust-pill-icon {
+      width: 36px; height: 36px;
+      background: var(--green-pale); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; flex-shrink: 0;
+    }
+    .trust-pill-nl { font-weight: 700; font-size: .92rem; color: var(--ink); }
+    .trust-pill-en { font-size: .76rem; color: var(--muted); font-style: italic; }
+
+    /* ══ SERVICES ══════════════════════════════════════ */
+    #diensten { background: var(--green); padding: var(--sp) 0; }
+    #diensten .section-tag { color: rgba(255,255,255,.5); }
+    #diensten .section-tag::before { background: rgba(255,255,255,.3); }
+    #diensten .section-heading { color: #fff; }
+    #diensten .section-heading .accent { color: rgba(255,255,255,.55); font-style: italic; }
+    #diensten .section-sub { color: rgba(255,255,255,.45); }
+    #diensten .section-sub em { color: rgba(255,255,255,.3); }
+
+    .services-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 16px;
+    }
+    .svc-card {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--r-lg); padding: 32px 26px 28px;
+      transition: background .2s, transform .2s, box-shadow .2s;
+      position: relative; overflow: hidden;
+    }
+    .svc-card::before {
+      content: '';
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 3px;
+      background: var(--rust);
+      transform: scaleX(0); transform-origin: left;
+      transition: transform .25s;
+    }
+    .svc-card:hover::before { transform: scaleX(1); }
+    .svc-card:hover {
+      background: rgba(255,255,255,.12);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0,0,0,.2);
+    }
+    .svc-icon-box {
+      width: 48px; height: 48px;
+      border: 1.5px solid rgba(255,255,255,.15);
+      border-radius: var(--r-md);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; margin-bottom: 18px;
+    }
+    .svc-nl { font-size: 1.02rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .svc-en { font-size: .82rem; color: rgba(255,255,255,.4); font-style: italic; }
+
+    /* ══ ABOUT ═════════════════════════════════════════ */
+    #over { background: var(--cream); padding: var(--sp) 0; }
+    .about-grid { display: grid; grid-template-columns: 1fr 340px; gap: 56px; align-items: start; }
+    @media (max-width: 760px) { .about-grid { grid-template-columns: 1fr; gap: 36px; } }
+
+    .about-content .section-tag { display: flex; }
+    .about-lang-wrap { margin-bottom: 28px; }
+
+    .checklist { margin-bottom: 32px; }
+    .checklist li {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 11px 0; border-bottom: 1px solid var(--border);
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .check-box {
+      width: 20px; height: 20px; min-width: 20px;
+      border: 2px solid var(--green-light);
+      border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+      margin-top: 2px;
+    }
+    .check-box svg { display: block; }
+    .check-nl { font-weight: 600; font-size: .93rem; color: var(--ink); }
+    .check-en { font-size: .81rem; color: var(--muted); font-style: italic; margin-top: 2px; }
+    .about-cta { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    /* ID card */
+    .id-card {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      box-shadow: var(--sh-md);
+      position: sticky; top: 84px;
+    }
+    .id-card-top {
+      background: var(--green);
+      padding: 36px 24px 28px;
+      text-align: center; position: relative;
+    }
+    .id-card-top::after {
+      content: '';
+      position: absolute; bottom: -16px; left: 50%; transform: translateX(-50%);
+      width: 64px; height: 64px;
+      background: var(--white);
+      border-radius: 50%;
+      border: 3px solid var(--green-pale);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .id-avatar {
+      width: 72px; height: 72px;
+      background: rgba(255,255,255,.15);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.7rem; color: #fff;
+      margin: 0 auto 16px;
+      border: 2px solid rgba(255,255,255,.2);
+    }
+    .id-name { font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .id-role { font-size: .76rem; color: rgba(255,255,255,.5); }
+    .id-body { padding: 28px 22px 22px; }
+    .id-row {
+      display: flex; align-items: flex-start;
+      gap: 10px; padding: 9px 0;
+      border-bottom: 1px solid var(--cream-dark);
+      font-size: .83rem;
+    }
+    .id-row:last-child { border-bottom: none; }
+    .id-key { color: var(--muted); font-weight: 600; min-width: 42px; flex-shrink: 0; font-size: .78rem; text-transform: uppercase; letter-spacing: .05em; }
+    .id-val { color: var(--slate); }
+    .id-val a { color: var(--green-light); font-weight: 600; transition: color .2s; }
+    .id-val a:hover { color: var(--green); }
+    .id-footer {
+      background: var(--cream);
+      border-top: 1px solid var(--border);
+      padding: 14px 22px;
+      display: flex; gap: 8px; justify-content: center; flex-wrap: wrap;
+    }
+    .id-badge {
+      font-size: .72rem; font-weight: 700;
+      background: var(--green-pale); color: var(--green);
+      border-radius: 4px; padding: 4px 10px;
+    }
+
+    /* ══ CONTACT ═══════════════════════════════════════ */
+    #contact { background: var(--cream-dark); padding: var(--sp) 0; }
+    .contact-shell {
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: var(--r-xl);
+      overflow: hidden;
+      box-shadow: var(--sh-md);
+    }
+    .contact-head {
+      background: var(--green);
+      padding: 52px 48px 44px;
+      position: relative; overflow: hidden;
+    }
+    .contact-head::after {
+      content: '';
+      position: absolute; bottom: -1px; right: -1px;
+      width: 220px; height: 220px;
+      background: rgba(255,255,255,.03);
+      border-radius: 50%;
+    }
+    @media (max-width: 580px) { .contact-head { padding: 38px 22px 32px; } }
+    .contact-head .section-tag { color: rgba(255,255,255,.5); }
+    .contact-head .section-tag::before { background: rgba(255,255,255,.3); }
+    .contact-head h2 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.3rem);
+      font-weight: 400; color: #fff; margin-bottom: 6px;
+    }
+    .contact-head .sub { color: rgba(255,255,255,.45); font-size: .9rem; font-style: italic; margin-bottom: 36px; }
+
+    .contact-lang-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 16px; position: relative; z-index: 1;
+    }
+    @media (max-width: 580px) { .contact-lang-grid { grid-template-columns: 1fr; } }
+
+    .clc {
+      background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--r-md); padding: 22px 20px;
+    }
+    .clc-label {
+      display: block; font-size: .7rem; font-weight: 700;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: rgba(255,255,255,.35);
+      padding-bottom: 10px; margin-bottom: 12px;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .clc p { font-size: .9rem; color: rgba(255,255,255,.55); margin-bottom: 16px; line-height: 1.5; }
+    .clc .btns { display: flex; gap: 8px; flex-wrap: wrap; }
+    .clc .btns .btn { padding: 12px 20px; font-size: .88rem; }
+
+    .contact-info-bar {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--border);
+    }
+    @media (max-width: 640px) { .contact-info-bar { grid-template-columns: 1fr 1fr; } }
+    .ci {
+      padding: 24px 18px;
+      border-right: 1px solid var(--border);
+      display: flex; flex-direction: column; gap: 4px;
+      transition: background .2s;
+    }
+    .ci:hover { background: var(--cream); }
+    .ci:last-child { border-right: none; }
+    @media (max-width: 640px) {
+      .ci:nth-child(2) { border-right: none; }
+      .ci:nth-child(3) { border-right: 1px solid var(--border); }
+    }
+    .ci-lbl { font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+    .ci-val { font-size: .93rem; font-weight: 700; color: var(--slate); }
+    .ci-val a { color: var(--green-light); transition: color .2s; }
+    .ci-val a:hover { color: var(--green); }
+
+    /* ══ FOOTER ════════════════════════════════════════ */
+    footer { background: var(--ink); color: #4a5568; font-size: .85rem; }
+    .footer-rule {
+      height: 3px;
+      background: linear-gradient(90deg, var(--green), var(--green-light), var(--rust), var(--green-light), var(--green));
+    }
+    .footer-inner { padding: 52px 28px 36px; max-width: 960px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+    @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; } }
+    @media (max-width: 460px) { .footer-grid { grid-template-columns: 1fr; } }
+
+
+    .fc h5 {
+      font-size: .68rem; font-weight: 700; letter-spacing: .14em;
+      text-transform: uppercase; color: #2e4050;
+      margin-bottom: 16px; padding-bottom: 10px;
+      border-bottom: 1px solid #161e28;
+    }
+    .footer-brand-row { display: flex; align-items: center; gap: 11px; margin-bottom: 14px; }
+    .footer-mono {
+      width: 38px; height: 38px;
+      border: 1.5px solid #2a3a4a; border-radius: var(--r-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 1.1rem; color: #3a5568;
+    }
+    .footer-brand-name { font-size: .97rem; font-weight: 700; color: #3a5568; }
+    .footer-tagline { font-size: .81rem; color: #253545; line-height: 1.75; margin-bottom: 16px; }
+    .fc p { color: #2e4050; line-height: 2.1; }
+    .fc a { display: block; color: #2e4050; line-height: 2.1; transition: color .2s; }
+    .fc a:hover { color: var(--green-light); }
+    .fc strong { color: #3a5568; font-weight: 600; }
+    .reg-block {
+      margin-top: 10px; display: inline-flex; flex-direction: column; gap: 6px;
+    }
+    .reg-line {
+      display: flex; align-items: center; gap: 8px;
+      background: #0c1620; border: 1px solid #162030;
+      border-radius: 4px; padding: 6px 12px;
+      font-size: .74rem; color: #2e4858; font-weight: 600;
+    }
+    .reg-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green-light); flex-shrink: 0; }
+
+    .footer-bottom {
+      border-top: 1px solid #111c28; padding-top: 22px;
+      display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 12px;
+    }
+    .footer-bottom span { color: #1e3040; font-size: .78rem; }
+    .fb-brand { color: var(--green-light) !important; font-weight: 700; }
+    .fb-pills { display: flex; gap: 8px; flex-wrap: wrap; }
+    .fb-pill {
+      background: #0d1924; border: 1px solid #162535;
+      border-radius: 3px; padding: 3px 10px;
+      font-size: .72rem; color: #253545; font-weight: 600;
+    }
+
+    #diensten, #over, #contact { scroll-margin-top: 64px; }
+  </style>
+</head>
+<body>
+
+<!-- ════ NAV ════════════════════════════════════════════ -->
+<nav>
+  <div class="inner">
+    <div class="nav-brand">
+      <div class="nav-monogram">AG</div>
+      <div>
+        <div class="nav-name">AG Bouw</div>
+        <div class="nav-sub">Arunas Gimebreikas · Rotterdam</div>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#diensten">Diensten</a></li>
+      <li><a href="#over">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="tel:0612345678" class="nav-cta">
+      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"/></svg>
+      0612345678
+    </a>
+  </div>
+</nav>
+
+<!-- ════ HERO ════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+        Rotterdam &amp; omgeving
+      </div>
+      <h1 class="hero-h1">
+        Betrouwbare renovatie<br>
+        en <em>tegelwerk</em><br>
+        in Rotterdam
+      </h1>
+      <p class="hero-h1-en">Reliable renovation and tiling in Rotterdam</p>
+      <div class="hero-btns">
+        <a href="tel:0612345678" class="btn btn-rust btn-xl">
+          <svg width="17" height="17" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"/></svg>
+          Bel direct
+        </a>
+        <a href="mailto:info@agbouw.nl" class="btn btn-outline-cream btn-xl">Offerte aanvragen</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-lang-card">
+        <span class="hlc-flag">🇳🇱 Nederlands</span>
+        <p>Vakkundig werk, eerlijke prijs en persoonlijk contact. Al jarenlang de betrouwbare keuze in Rotterdam.</p>
+        <div class="btns">
+          <a href="tel:0612345678" class="btn btn-rust">Bel direct</a>
+          <a href="mailto:info@agbouw.nl" class="btn btn-outline-cream">Offerte</a>
+        </div>
+      </div>
+      <div class="hero-lang-card">
+        <span class="hlc-flag">🇬🇧 English</span>
+        <p>Expert craftsmanship, fair pricing and personal service. Rotterdam's trusted builder for years.</p>
+        <div class="btns">
+          <a href="tel:0612345678" class="btn btn-rust">Call now</a>
+          <a href="mailto:info@agbouw.nl" class="btn btn-outline-cream">Request quote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ TRUST ════════════════════════════════════════════ -->
+<div id="trust">
+  <div class="trust-pills">
+    <div class="trust-pill">
+      <div class="trust-pill-icon">🏅</div>
+      <div><div class="trust-pill-nl">10+ jaar ervaring</div><div class="trust-pill-en">10+ years experience</div></div>
+    </div>
+    <div class="trust-pill">
+      <div class="trust-pill-icon">🔲</div>
+      <div><div class="trust-pill-nl">200+ projecten</div><div class="trust-pill-en">200+ projects done</div></div>
+    </div>
+    <div class="trust-pill">
+      <div class="trust-pill-icon">⚡</div>
+      <div><div class="trust-pill-nl">Snel beschikbaar</div><div class="trust-pill-en">Quick availability</div></div>
+    </div>
+    <div class="trust-pill">
+      <div class="trust-pill-icon">📋</div>
+      <div><div class="trust-pill-nl">KvK geregistreerd</div><div class="trust-pill-en">Officially registered</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ DIENSTEN ════════════════════════════════════════ -->
+<section id="diensten">
+  <div class="container">
+    <span class="section-tag">Wat wij doen · What we do</span>
+    <h2 class="section-heading">Onze <span class="accent">diensten</span></h2>
+    <p class="section-sub">
+      Van badkamerrenovatie tot schilderwerk – AG Bouw pakt elk project professioneel aan.<br>
+      <em style="font-size:.92em;">From bathroom renovation to painting – every project handled professionally.</em>
+    </p>
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="svc-icon-box">🛁</div>
+        <div class="svc-nl">Badkamer renovatie</div>
+        <div class="svc-en">Bathroom renovation</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon-box">🔲</div>
+        <div class="svc-nl">Tegelzetten</div>
+        <div class="svc-en">Tiling</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon-box">🖌️</div>
+        <div class="svc-nl">Schilderwerk</div>
+        <div class="svc-en">Painting</div>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon-box">🏠</div>
+        <div class="svc-nl">Kleine verbouwingen</div>
+        <div class="svc-en">Small renovations</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ OVER ═════════════════════════════════════════════ -->
+<section id="over">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-content">
+        <span class="section-tag">Over ons · About us</span>
+        <h2 class="section-heading" style="margin-bottom:24px;">
+          Vakman met passie<br><span class="accent">voor het werk</span>
+        </h2>
+        <div class="about-lang-wrap">
+          <div class="lang-block lang-block-nl">
+            <div class="lang-header lang-header-nl">🇳🇱 Nederlands</div>
+            <div class="lang-body">
+              <p>Ik ben Arunas Gimebreikas, zelfstandig bouwvakker vanuit Rotterdam. Met meer dan tien jaar ervaring in renovatie en tegelwerk help ik particulieren en bedrijven aan een perfect eindresultaat. Klein of groot project – ik pak het aan met dezelfde zorg en precisie.</p>
+            </div>
+          </div>
+          <div class="lang-block lang-block-en">
+            <div class="lang-header lang-header-en">🇬🇧 English</div>
+            <div class="lang-body">
+              <p>I'm Arunas Gimebreikas, a self-employed builder based in Rotterdam. With over ten years of experience in renovation and tiling, I help private clients and businesses achieve a perfect finish. Small or large project – I approach every job with the same care and precision.</p>
+            </div>
+          </div>
+        </div>
+        <ul class="checklist">
+          <li>
+            <span class="check-box"><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#1a4a3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><div class="check-nl">Eerlijke vaste prijs, geen verrassingen achteraf</div><div class="check-en">Fair fixed price, no surprises afterwards</div></div>
+          </li>
+          <li>
+            <span class="check-box"><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#1a4a3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><div class="check-nl">Netjes en opgeruimd werk</div><div class="check-en">Clean and tidy workmanship</div></div>
+          </li>
+          <li>
+            <span class="check-box"><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#1a4a3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><div class="check-nl">Altijd bereikbaar en op tijd</div><div class="check-en">Always reachable and punctual</div></div>
+          </li>
+          <li>
+            <span class="check-box"><svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#1a4a3a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <div><div class="check-nl">KvK-geregistreerd ZZP vakman</div><div class="check-en">Registered self-employed tradesman (KvK)</div></div>
+          </li>
+        </ul>
+        <div class="about-cta">
+          <a href="#contact" class="btn btn-green btn-lg">Neem contact op</a>
+          <a href="#contact" class="btn btn-outline-green btn-lg">Get in touch</a>
+        </div>
+      </div>
+
+      <!-- ID Card -->
+      <div class="id-card">
+        <div class="id-card-top">
+          <div class="id-avatar">AG</div>
+          <div class="id-name">Arunas Gimebreikas</div>
+          <div class="id-role">ZZP Vakman · AG Bouw</div>
+        </div>
+        <div class="id-body" style="padding-top:22px;">
+          <div class="id-row"><span class="id-key">📍</span><span class="id-val">Laan op Zuid 123<br>3072 DB Rotterdam</span></div>
+          <div class="id-row"><span class="id-key">📞</span><span class="id-val"><a href="tel:0612345678">0612345678</a></span></div>
+          <div class="id-row"><span class="id-key">✉️</span><span class="id-val"><a href="mailto:info@agbouw.nl">info@agbouw.nl</a></span></div>
+          <div class="id-row"><span class="id-key">KvK</span><span class="id-val">87654321</span></div>
+          <div class="id-row"><span class="id-key">BTW</span><span class="id-val">NL123456789B01</span></div>
+        </div>
+        <div class="id-footer">
+          <span class="id-badge">✔ KvK</span>
+          <span class="id-badge">✔ BTW</span>
+          <span class="id-badge">✔ ZZP</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ CONTACT ══════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-shell">
+      <div class="contact-head">
+        <span class="section-tag">Contact</span>
+        <h2>Klaar om te beginnen?<br><span style="font-style:italic;color:rgba(255,255,255,.5);font-size:.75em;">Ready to start?</span></h2>
+        <p class="sub">Wij reageren binnen 24 uur · We respond within 24 hours</p>
+        <div class="contact-lang-grid">
+          <div class="clc">
+            <span class="clc-label">🇳🇱 Nederlands</span>
+            <p>Vraag vandaag nog een vrijblijvende offerte aan. Geen gedoe, gewoon eerlijk advies.</p>
+            <div class="btns">
+              <a href="tel:0612345678" class="btn btn-rust">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"/></svg>
+                Bel direct
+              </a>
+              <a href="mailto:info@agbouw.nl" class="btn btn-outline-cream">✉ Offerte</a>
+            </div>
+          </div>
+          <div class="clc">
+            <span class="clc-label">🇬🇧 English</span>
+            <p>Request a free, no-obligation quote today. Honest advice, no hassle.</p>
+            <div class="btns">
+              <a href="tel:0612345678" class="btn btn-rust">
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"/></svg>
+                Call now
+              </a>
+              <a href="mailto:info@agbouw.nl" class="btn btn-outline-cream">✉ Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-info-bar">
+        <div class="ci"><span class="ci-lbl">📞 Telefoon</span><span class="ci-val"><a href="tel:0612345678">0612345678</a></span></div>
+        <div class="ci"><span class="ci-lbl">✉️ E-mail</span><span class="ci-val"><a href="mailto:info@agbouw.nl">info@agbouw.nl</a></span></div>
+        <div class="ci"><span class="ci-lbl">📍 Adres</span><span class="ci-val">Laan op Zuid 123<br>Rotterdam</span></div>
+        <div class="ci"><span class="ci-lbl">🕐 Bereikbaar</span><span class="ci-val">Ma–Za · Mon–Sat</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════ FOOTER ══════════════════════════════════════════ -->
+<footer>
+  <div class="footer-rule"></div>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="fc">
+        <div class="footer-brand-row">
+          <div class="footer-mono">AG</div>
+          <div class="footer-brand-name">AG Bouw</div>
+        </div>
+        <p class="footer-tagline">Vakkundige renovatie &amp; tegelwerk<br>in Rotterdam en omgeving.<br><em style="font-size:.8em;">Professional renovation &amp; tiling in Rotterdam.</em></p>
+        <a href="tel:0612345678" style="color:#2e5060;font-weight:600;">📞 0612345678</a>
+        <a href="mailto:info@agbouw.nl" style="color:#2e5060;font-weight:600;">✉️ info@agbouw.nl</a>
+      </div>
+      <div class="fc">
+        <h5>Bedrijfsgegevens</h5>
+        <p><strong>Naam:</strong> Arunas Gimebreikas</p>
+        <p><strong>Handelsnaam:</strong> AG Bouw</p>
+        <div class="reg-block">
+          <div class="reg-line"><span class="reg-dot"></span>KvK-nr: 87654321</div>
+          <div class="reg-line"><span class="reg-dot"></span>BTW-nr: NL123456789B01</div>
+        </div>
+      </div>
+      <div class="fc">
+        <h5>Diensten / Services</h5>
+        <p>Badkamer renovatie</p>
+        <p>Tegelzetten</p>
+        <p>Schilderwerk</p>
+        <p>Kleine verbouwingen</p>
+        <p style="margin-top:6px;font-style:italic;font-size:.78rem;color:#1e3040;line-height:1.9;">Bathroom renovation<br>Tiling · Painting · Small renovations</p>
+      </div>
+      <div class="fc">
+        <h5>Adres / Address</h5>
+        <p>Laan op Zuid 123</p>
+        <p>3072 DB Rotterdam</p>
+        <p style="margin-top:10px;"><strong>Werkgebied:</strong></p>
+        <p>Rotterdam &amp; omgeving</p>
+        <p style="font-style:italic;font-size:.8rem;color:#1e3040;">Rotterdam &amp; surroundings</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 <span class="fb-brand">AG Bouw</span> – Arunas Gimebreikas. Alle rechten voorbehouden / All rights reserved.</span>
+      <div class="fb-pills">
+        <span class="fb-pill">KvK 87654321</span>
+        <span class="fb-pill">BTW NL123456789B01</span>
+        <span class="fb-pill">Rotterdam</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
