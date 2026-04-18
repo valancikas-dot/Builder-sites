@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/builders/ag-bouw/$1" }
+  ]
+}
